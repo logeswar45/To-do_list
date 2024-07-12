@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(images/background.jpg) fixed no-repeat;
+    background-size: 100% 100%;
+}
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: transparent;
+}
+header .container{
+      margin: 0 auto;
+      padding: 0 50px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    right: 30px;
+}
+.logo img{
+    height: 55px;
+    width: 55px;
+    border-radius: 10px;
+}
+.logo h2{
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    left: 5px;
+    color:white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+    display: flex;
+    color: white;
+    gap: 20px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main{
+    width: 100%;
+    position: absolute;
+}
+.main img{
+    display: block;
+    margin: auto;
+    height: 100%;
+    filter: drop-shadow(40px 40px 20px black);
+}
+.content{
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content .container{
+    position: relative;
+    left: 50px;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      width: 350px;
+      margin: auto;
+      height: 100%;
+      gap: 25px;
+}
+.todo_value{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+    border-bottom: 2px solid brown;
+}
+.todo_checkbox{
+    cursor:pointer;
+    margin-left: 30px;
+}
+.todo:has(.todo_checkbox:checked){
+    order: 1;
+}
+
